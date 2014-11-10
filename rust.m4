@@ -58,7 +58,7 @@ m4_define([_AC_LANG_IO_PROGRAM(Rust)],
 [AC_LANG_PROGRAM([use std::path::Path;use std::io::fs::File;],
 [match File::create(&Path::new("conftest.out")) {
     Ok(_) => {},
-    Err(_) => {fail!("")}
+    Err(_) => {panic!("")}
   }
 ])])
 
