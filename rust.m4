@@ -89,5 +89,7 @@ _AC_DO_LIMIT([$ac_compiler --version  >&AS_MESSAGE_LOG_FD])
 _AC_COMPILER_EXEEXT
 _AC_COMPILER_OBJEXT
 RUSTFLAGS="-g -O "
+RUSTFLAGS+="--crate-name "
+RUSTFLAGS+=$PACKAGE
 AC_LANG_POP(Rust)dnl
 ])
